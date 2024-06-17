@@ -6,7 +6,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 
 #key設定
 import os
-google_api_key = st.secrets['GOOGLE_API_KEY']['key']
+GOOGLE_API_KEY = st.secrets['GOOGLE_API_KEY']['key']
 
 #モデル設定
 chat=ChatGoogleGenerativeAI(temperature=0,model="gemini-1.5-flash-latest")
